@@ -1,0 +1,296 @@
+/* Setjum inn „reset“ sem fjarlægir margin og padding af öllu */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Reiknum stærð á öllum boxum sem border-box */
+  html {
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  /* og látum erfast á allt */
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  /* hjálpar class sem felur sjónrænt en skjálesarar lesa */
+  .sr-only:not(:focus):not(:active) {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+body {
+    font-family: 'Lora' , serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.bold-text {
+    font-family: 'Lora' , serif;
+    font-weight: 700;
+}
+
+.content{
+    display: flex;
+    min-height: 100vh;
+}
+
+/** nav valmyndin **/
+nav {
+    padding: 1rem;
+    margin: 0 auto;
+    background-color: #fff9ee;
+}
+
+nav ul {
+    text-align: center;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    background-color: #fff9ee;
+    max-width: 900px;
+    
+    }
+
+nav ul li:last-child {
+    padding-right: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 10px;
+ }
+
+nav ul li a {
+    color: black;
+}
+
+
+/** Hausinn **/
+header { 
+    display: block;
+
+    padding: 1rem;
+    width: 100%;
+
+    background-color
+    : #2f0505;
+    border-bottom: 8px solid;
+    border-color: #ffe7ae;
+    color: #fff1cf;
+
+    text-align: center;
+}
+
+
+
+
+/** Main **/
+
+main {
+margin: 0 auto;
+width: 100%;
+max-width: 900px;
+padding: 1rem;
+}
+
+body p a {
+    color: black
+}
+
+/** Forsíða **/
+
+.forsida {
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 900px;
+    padding: 1rem;
+}
+
+.dalkur {
+        text-align: left;
+        padding: 0rem;
+        box-sizing: border-box;
+        margin: 0 auto;
+    
+        display: inline-block;
+        width: 25em;
+        vertical-align: top;
+}
+.dalkur2 {
+    text-align: left;
+    padding: 0rem;
+    box-sizing: border-box;
+    margin: 0 auto;
+
+    display: inline-block;
+    width: 25em;
+    vertical-align: top;
+}
+
+.dalkur3 {
+    text-align: left;
+    padding: 2rem;
+    box-sizing: border-box;
+    margin: 0 auto;
+
+    display: inline-block;
+    width: 25em;
+    vertical-align: top;
+}
+
+.dalkur4 {
+    text-align: left;
+    padding: 2rem;
+    box-sizing: border-box;
+    margin: 0 auto;
+
+    display: inline-block;
+    width: 25em;
+    vertical-align: top;
+}
+
+
+main section a {
+    color:black;
+}
+
+.linubrot {
+border-top: #ffe7ae solid;
+}
+
+/** Matseðillinn **/
+
+main .matsedill {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 900px;
+    background-color: white;
+    padding: 1rem;
+}
+
+table {
+    border-spacing: 0;
+  }
+  
+  table th, table td {
+    padding: 0.25rem;
+    text-align: left;
+  }
+
+tbody tr:nth-child(2n-1){
+    background-color: #ffe7ae;
+}
+
+
+
+/** Um Veitingastaðinn **/
+.umefni {
+    text-align: left;
+    margin: 1rem;
+    width: 100%;
+    max-width: 900px;
+    padding: 10rem;
+}
+
+.umefni h2 {
+margin-bottom: 5rem;
+}
+
+.myndir {
+    text-align: center;
+    margin: 1rem;
+    width: 100%;
+    max-width: 900px;
+    padding: 1rem;
+}
+
+.starfsfolk {
+    text-align: center;
+    padding: 1rem;
+    box-sizing: border-box;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
+
+}
+
+.starfsfolk2 {
+    text-align: center;
+    padding: 1rem;
+    box-sizing: border-box;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
+}
+
+/** Pöntun **/
+.efnipantanir {
+    text-align: left;
+    margin: 1rem;
+    width: 100%;
+    max-width: 900px;
+    padding: 10rem;
+}
+
+.efnipantanir fieldset {
+    border-color: #ffe7ae;
+}
+
+.efnipantanir .linubrot2 {
+    border-top: #ffe7ae solid;
+}
+.eihklass {
+    padding: 0.5;
+}
+.eihklassi {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+/** Fóturinn **/
+
+footer {
+padding: 1rem;
+width: 100%;
+
+border-top: 8px solid;
+border-color: #ffe7ae;
+background-color: #2f0505;
+
+color: #fff1cf;
+}
+
+footer .content {
+text-align: center;
+margin: 0 auto;
+width: 100%;
+max-width: 900px;
+padding: 1rem;
+}
+
+footer .content .box {
+    text-align: center;
+    padding: 1rem;
+    box-sizing: border-box;
+    margin: 0 auto;
+
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+}
+  
+
+footer dl dt a {
+    color: #fff1cf
+}
